@@ -1,51 +1,72 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Layout</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=latin-ext"
-        rel="stylesheet">
-    <script src="https://kit.fontawesome.com/c89b3bee8a.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" media="screen and (min-width:576px)" href="/css/small.css">
-    <link rel="stylesheet" media="screen and (min-width:768px)" href="/css/medium.css">
-    <link rel="stylesheet" media="screen and (min-width:992px)" href="/css/large.css">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap&subset=latin-ext"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/c89b3bee8a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width:576px)"
+      href="/css/small.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width:768px)"
+      href="/css/medium.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width:992px)"
+      href="/css/large.css"
+    />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="nav-mobile"></div>
-        <p>ma<span>x</span>on</p></div>
-        <div class="nav-desktop">
-            <div class="all-nav">
-                <a href="#">home</a>
-                <a href="#about">about</a>
-                <a href="#products">features</a>
-                <a href="#project">project</a>
-                <a href="#blog">blog</a>
-                <a href="#contact">contact</a>
-            </div>
-        
-        
+      <div class="wrapper">
+        <div class="header-box">
+          <p>ma<span>x</span>on</p>
+          <nav class="nav-desktop">
+            <a href="#">home</a>
+            <a href="#about">about</a>
+            <a href="#products">features</a>
+            <a href="#project">project</a>
+            <a href="#blog">blog</a>
+            <a href="#contact">contact</a>
+          </nav>
         </div>
-    </nav>
+      </div>
+      <div class="nav-mobile">
+        <i class="fas fa-bars"></i>
+      </div>
     </header>
-        <section class="home">
-            <div class="wrapper">
-                <div class="hero-text">
-                  <h5>Creative Agency</h5>
-                  <h2>Building Brand is Our Business</h2>
-                     <p>Can days you'll forth two grass form face you saying, divide. Subdue days light whose. Stars creepeth
-                        that creature thing.</p>
-                 <button class="view">view project</button>
-            </div>
-            <div class="home-image">
-            </div>
+    <section class="home">
+      <div class="wrapper">
+        <div class="hero-text">
+          <h3>Creative Agency</h3>
+          <h1>Building Brand is Our Business</h1>
+          <p>
+            Can days you'll forth two grass form face you saying, divide. Subdue
+            days light whose. Stars creepeth that creature thing.
+          </p>
+          <button class="view project">view project</button>
+          <img
+            class="hero-image"
+            src="./img/home_640.jpg"
+            alt="people during work"
+          />
         </div>
+      </div>
     </section>
-</body>
-
+  </body>
 </html>
