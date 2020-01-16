@@ -13,7 +13,7 @@
 
 header{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     height: 80px;
 }
@@ -28,17 +28,11 @@ header p span{
     font-size: 35px;
 }
 
-/* .header-box{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-} */
-
 .nav-mobile{
     font-size: 40px;
 }
 
-.nav-desktop a{
+.nav-desktop{
     display: none;
 }
 
@@ -46,14 +40,11 @@ header p span{
 
 section.home{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     height: 100vh;
 }
 
-.hero-text{
-    width: 50%;
-}
 .hero-text h3{
     margin-bottom: 25px;
     color: rgb(255, 102, 0);
@@ -63,7 +54,7 @@ section.home{
 
 .hero-text h1{ 
     margin-bottom: 25px;
-    font-size: 60px;
+    font-size: 40px;
 }
 
 .hero-text p{
@@ -81,7 +72,4 @@ section.home{
     border: none ;
     border-radius: 30px;
     background-color:rgb(255, 102, 0);
-}
-
-.hero-image{
 }

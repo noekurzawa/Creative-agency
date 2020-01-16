@@ -1,1 +1,5 @@
 /* min-width:576px */
+
+.hero-image{
+    background-image: url('/img/home_1280.jpg');
+}
