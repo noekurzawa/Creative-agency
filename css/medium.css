@@ -1,75 +1,82 @@
 /* min-width:768px */
 
-.wrapper{
-    width: 80%;
+.wrapper {
+  width: 80%;
 }
 
-.nav-mobile{
-    display: none;
+.nav-mobile {
+  display: none;
 }
 
-.nav-desktop{
-    display: block;
+.nav-desktop {
+  display: block;
 }
 
-.nav-desktop a{
-    padding: 20px;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: black;
-    font-weight: 700;
+.nav-desktop a {
+  padding: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-weight: 700;
 }
 
-header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80px;
+.home {
+  position: relative;
 }
 
-header p{
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 30px;}
-
-header p span{
-    color: rgb(255, 102, 0);
-    font-size: 35px;
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
 }
 
-
-.header-box-desktop{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+header p {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 30px;
 }
 
-section.home{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+header p span {
+  color: rgb(255, 102, 0);
+  font-size: 35px;
 }
 
-.hero-text{
-    width: 50%;
-}
-.hero-text h3{
-    margin-bottom: 25px;
-    font-size: 20px;
+.header-box-desktop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.hero-text h1{ 
-    margin-bottom: 25px;
-    font-size: 60px;
+section.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.hero-text button{
-    margin-top: 40px;
-    padding: 20px 30px;
-    font-size: 15px;
+.hero-text {
+  width: 50%;
+}
+.hero-text h3 {
+  margin-bottom: 25px;
+  font-size: 20px;
 }
 
-.hero-image{
-    background-image: url('/img/home_1920.jpg');
+.hero-text h1 {
+  margin-bottom: 25px;
+  font-size: 60px;
+}
+
+.hero-text button {
+  padding: 20px 30px;
+  font-size: 15px;
+}
+
+.hero-image {
+  position: absolute;
+  right: 0;
+  height: 70%;
+  width: 50%;
+  border-radius: 0% 100% 0% 100% / 51% 0% 100% 49%;
+  background-image: url("/img/home_1920.jpg");
 }
