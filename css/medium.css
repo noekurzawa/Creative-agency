@@ -31,21 +31,17 @@ header {
   height: 80px;
 }
 
-header p {
-  text-transform: uppercase;
-  font-weight: 900;
-  font-size: 30px;
-}
-
-header p span {
-  color: rgb(255, 102, 0);
-  font-size: 35px;
-}
-
 .header-box-desktop {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+header p{
+  font-size: 30px;}
+
+header span{
+  font-size: 35px;
 }
 
 section.home {
