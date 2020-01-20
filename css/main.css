@@ -2,75 +2,90 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 /* HEADER */
-
-.wrapper{
-    width: 80%;
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
 }
 
-.header-box-desktop{
+.nav-desktop a {
+    padding: 20px 5px 20px 5px;
+    font-size: 19px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 700;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+.header-box-desktop {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
-header{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 60px;
-    z-index: 3;
-}
-
-header p{
+header p {
     text-transform: uppercase;
-    font-weight: 900;
-    font-size: 20px;}
-
-header span{
-    color: rgb(255, 102, 0);
+    font-weight: 400;
     font-size: 25px;
 }
 
-.nav-mobile i{
+header span {
+    color: rgb(255, 102, 0);
     font-size: 30px;
+    font-weight: 700;
 }
 
-.nav-desktop{
+.nav-mobile i {
+    padding: 10px 0 10px 20px;
+    font-size: 35px;
+}
+
+.nav-desktop {
     display: none;
 }
 
 /* SECTION */
-section.home{
+section.home {
     display: flex;
     flex-direction: column;
+    justify-content: start;
     align-items: center;
     height: 100vh;
 }
 
-.hero-text h3{
-    margin-top: 30px;
+.hero-text h4 {
+    margin-top: 10px;
     color: rgb(255, 102, 0);
     font-size: 17px;
     letter-spacing: 1px;
 }
 
-.hero-text h1{ 
+.hero-text h1 {
     margin-bottom: 20px;
-    font-size: 35px;
+    font-size: 38px;
 }
 
-.hero-text p{
+.hero-text p {
     color: gray;
     font-size: 14px;
     letter-spacing: 1px;
-} 
+}
 
-.hero-text button{
-    margin-top: 20px;
+.hero-text button {
+    margin: 20px 0 15px 0;
     padding: 10px 14px;
     color: white;
     text-transform: uppercase;
@@ -79,9 +94,58 @@ section.home{
     border: none;
     border-radius: 62px;
     background-color: rgb(255, 102, 0);
-    letter-spacing: 1px
+    letter-spacing: 1px;
 }
 
-img{
+img {
     width: 100%;
+}
+
+@media (min-width: 370px) {
+    .wrapper {
+        width: 85%;
+    }
+
+    header {
+        height: 80px;
+    }
+
+    .hero-text h1 {
+        margin-bottom: 20px;
+        font-size: 47px;
+    }
+
+    .hero-text p {
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+
+    .hero-text h4 {
+        font-size: 20px;
+        letter-spacing: 1px;
+        margin-top: 20px;
+    }
+
+    header p {
+        font-size: 33px;
+    }
+
+    header span {
+        color: rgb(255, 102, 0);
+        font-size: 45px;
+    }
+
+    .nav-mobile i {
+        font-size: 44px;
+        padding: 15px 10px 10px 20px;
+    }
+
+    .hero-text button {
+        font-size: 13px;
+        padding: 15px 15px;
+    }
+
+    .hero-image {
+        height: 300px;
+    }
 }
