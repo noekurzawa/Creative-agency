@@ -22,6 +22,11 @@
     font-weight: 700;
 }
 
+.nav-mobile i {
+    padding: 5px 10px ;
+    font-size: 30px;
+}
+
 header {
     display: flex;
     justify-content: center;
@@ -48,10 +53,6 @@ header span {
     font-weight: 700;
 }
 
-.nav-mobile i {
-    padding: 10px 0 10px 20px;
-    font-size: 35px;
-}
 
 .nav-desktop {
     display: none;
@@ -97,11 +98,15 @@ section.home {
     letter-spacing: 1px;
 }
 
-img {
+.hero-image {
+    height: 200px;
     width: 100%;
+    background-image: url('/img/people-2569234_640.jpg');
+    background-position: center;
+    background-size: cover;
 }
 
-@media (min-width: 370px) {
+@media (min-width: 360px) {
     .wrapper {
         width: 85%;
     }
@@ -110,9 +115,18 @@ img {
         height: 80px;
     }
 
+    header p {
+        font-size: 28px;
+    }
+
+    header span {
+        color: rgb(255, 102, 0);
+        font-size: 37px;
+    }
+
     .hero-text h1 {
-        margin-bottom: 20px;
-        font-size: 47px;
+        margin-bottom: 10px;
+        font-size: 42px;
     }
 
     .hero-text p {
@@ -123,29 +137,35 @@ img {
     .hero-text h4 {
         font-size: 20px;
         letter-spacing: 1px;
-        margin-top: 20px;
-    }
-
-    header p {
-        font-size: 33px;
-    }
-
-    header span {
-        color: rgb(255, 102, 0);
-        font-size: 45px;
-    }
-
-    .nav-mobile i {
-        font-size: 44px;
-        padding: 15px 10px 10px 20px;
+        margin-top: 10px;
     }
 
     .hero-text button {
-        font-size: 13px;
-        padding: 15px 15px;
+        margin: 15px 0 15px 0;
+        padding: 12px 8px;
+        font-size: 14px;
+    }
+
+    .hero-image {
+        height: 220px;
+    }
+}
+
+@media(orientation:landscape) {
+
+    .hero-text h1,
+    .hero-text p {
+        color: white;
+    }
+}
+
+@media (min-width: 400px) {
+    .hero-text h1 {
+        font-size: 46px;
     }
 
     .hero-image {
         height: 300px;
     }
+
 }

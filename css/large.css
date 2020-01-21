@@ -1,52 +1,5 @@
 /* min-width:1300px */
 
-
-header .wrapper {
-  width: 70%;
-}
-
-
-.home .wrapper {
-  display: flex;
-  justify-content: flex-start;
-  width: 70%;
-}
-
-section.home{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero-text{
-  width: 50%;
-}
-
-.hero-text button {
-  font-size: 16px;
-  padding: 12px 14px;
-}
-
-.hero-image{
-  position: absolute;
-  height: 400px;
-  width: 400px;
-  right: 80px;
-  border-radius: 50%;
-}
-
 .nav-desktop a{
-  font-size: 16px;
-}
-
-@media (min-width: 1200px){
-  .nav-desktop a{
-    font-size: 20px;
-  }
-}
-
-@media (min-width: 1500px){
-  .nav-desktop a{
-    font-size: 22px;
-  }
+  font-size: 18px;
 }

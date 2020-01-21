@@ -1,5 +1,95 @@
-/* min-width:576px */
+/* min-width:500px */
+header {
+    z-index: 20;
+    height: 45px;
+}
 
-.hero-image{
-    background-image: url("/img/home_mobile_1280.jpg");
+section.home {
+    height: 100vh;
+    background-image: url("/img/people-2569234_1920.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-image {
+    display: none;
+}
+
+.hero-shadow {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+header p {
+    font-size: 20px;
+}
+
+header span {
+    font-size: 25px;
+}
+
+.hero-text {
+    z-index: 5;
+}
+
+.hero-text h1 {
+    color: white;
+}
+
+.hero-text p {
+    color: white;
+}
+
+@media (min-width:550px) {
+    .hero-text h1 {
+        font-size: 36px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 600px) {
+
+    header{
+        height: 55px;
+    }
+    .hero-text h1 {
+        font-size: 40px;
+    }
+
+    .hero-text p {
+        font-size: 18px;
+    }
+
+    .hero-text button {
+        margin: 25px 0;
+    }
+}
+
+@media (min-width: 660px) {
+    .hero-text button {
+        margin: 30px 0;
+    }
+
+    .hero-text h4 {
+        margin-top: 30px;
+    }
+}
+
+@media (min-width: 720px) {
+    header{
+        height: 60px;
+    }
+    .hero-text h1 {
+        font-size: 42px;
+    }
+
+    .hero-text button {
+        padding: 17px 10px;
+        margin: 35px 0 35px 0;
+    }
 }
