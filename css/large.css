@@ -1,5 +1,4 @@
-/* min-width:1300px */
-
-.nav-desktop a{
-  font-size: 18px;
+/* min-width:992px */
+.home .hero-text h4 {
+  margin-top: -190px;
 }

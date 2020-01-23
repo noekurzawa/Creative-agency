@@ -1,7 +1,10 @@
 /* min-width:768px */
 
 header .wrapper {
-  width: 90%;
+  display: flex;
+  justify-content: center;
+
+  width: 80%;
 }
 
 .home .wrapper {
@@ -20,7 +23,8 @@ section .home {
   margin-top: 30px;
 }
 
-.hero-text h4 {
+.home .hero-text h4 {
+  margin-top: -50px;
   font-size: 20px;
 }
 
@@ -36,11 +40,7 @@ section .home {
 }
 
 @media (min-width: 800px) and (orientation:landscape) {
-  .header-box-desktop {
-    width: 90%;
-  }
-
-  .home .wrapper {
+.home .wrapper {
     width: 80%;
   }
 
@@ -68,5 +68,9 @@ section .home {
     padding: 15px 0px 15px 15px;
     font-size: 18px;
     font-weight: 400;
+  }
+
+  .hero-text h4{
+    margin-top: -60px;
   }
 }

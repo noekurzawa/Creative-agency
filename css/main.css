@@ -6,11 +6,15 @@
 }
 
 /* HEADER */
-.wrapper {
+.home .wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 90%;
+}
+
+.nav-desktop {
+    display: none;
 }
 
 .nav-desktop a {
@@ -23,64 +27,88 @@
 }
 
 .nav-mobile i {
-    padding: 5px 10px ;
+    padding: 5px 10px;
     font-size: 30px;
 }
 
+/* HEADER */
 header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60px;
+    height: 45px;
 }
 
 .header-box-desktop {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 90vw;
 }
 
 header p {
+    color: black;
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 header span {
     color: rgb(255, 102, 0);
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
 }
 
 
-.nav-desktop {
-    display: none;
-}
-
-/* SECTION */
-section.home {
+/* SECTION-HOME*/
+section {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
+}
+
+section.home {
     height: 100vh;
+    background-image: url("../img/people-2569234_1920.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hero-shadow {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    z-index: 5;
+}
+
+.hero-text h1,
+p,
+button {
+    color: white;
 }
 
 .hero-text h4 {
-    margin-top: 10px;
-    color: rgb(255, 102, 0);
+    color: #FF6600;
     font-size: 17px;
     letter-spacing: 1px;
 }
 
 .hero-text h1 {
     margin-bottom: 20px;
-    font-size: 38px;
+    font-size: 25px;
 }
 
 .hero-text p {
-    color: gray;
     font-size: 14px;
     letter-spacing: 1px;
 }
@@ -88,84 +116,53 @@ section.home {
 .hero-text button {
     margin: 20px 0 15px 0;
     padding: 10px 14px;
-    color: white;
     text-transform: uppercase;
-    font-size: 12px;
-    font-weight: 700;
+    font-size: 14px;
     border: none;
-    border-radius: 62px;
+    border-radius: 5px;
     background-color: rgb(255, 102, 0);
     letter-spacing: 1px;
 }
 
-.hero-image {
+/* SECTION-ABOUT */
+.about .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 90%;
+}
+
+section.about h1,
+section.about p {
+    color: black;
+}
+
+section.about h3 {
+    margin-bottom: 20px;
+}
+
+.about-photos img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 200px;
     width: 100%;
-    background-image: url('/img/people-2569234_640.jpg');
+    border-radius: 15px;
+}
+
+.heading-map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 160vh;
+    width: 100vw;
+    background-attachment: fixed;
+    background-image: url("/img/germany-map_640.png");
     background-position: center;
     background-size: cover;
 }
 
-@media (min-width: 360px) {
-    .wrapper {
-        width: 85%;
-    }
-
-    header {
-        height: 80px;
-    }
-
-    header p {
-        font-size: 28px;
-    }
-
-    header span {
-        color: rgb(255, 102, 0);
-        font-size: 37px;
-    }
-
-    .hero-text h1 {
-        margin-bottom: 10px;
-        font-size: 42px;
-    }
-
-    .hero-text p {
-        font-size: 18px;
-        letter-spacing: 2px;
-    }
-
-    .hero-text h4 {
-        font-size: 20px;
-        letter-spacing: 1px;
-        margin-top: 10px;
-    }
-
-    .hero-text button {
-        margin: 15px 0 15px 0;
-        padding: 12px 8px;
-        font-size: 14px;
-    }
-
-    .hero-image {
-        height: 220px;
-    }
-}
-
-@media(orientation:landscape) {
-
-    .hero-text h1,
-    .hero-text p {
-        color: white;
-    }
-}
-
-@media (min-width: 400px) {
-    .hero-text h1 {
-        font-size: 46px;
-    }
-
-    .hero-image {
-        height: 300px;
-    }
-
+.about-photos img {
+    margin-top: 20px;
 }
