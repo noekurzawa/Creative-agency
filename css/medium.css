@@ -1,12 +1,4 @@
 /* min-width:768px */
-
-header .wrapper {
-  display: flex;
-  justify-content: center;
-
-  width: 80%;
-}
-
 .home .wrapper {
   width: 90%;
 }
@@ -24,7 +16,6 @@ section .home {
 }
 
 .home .hero-text h4 {
-  margin-top: -50px;
   font-size: 20px;
 }
 
@@ -68,9 +59,5 @@ section .home {
     padding: 15px 0px 15px 15px;
     font-size: 18px;
     font-weight: 400;
-  }
-
-  .hero-text h4{
-    margin-top: -60px;
   }
 }

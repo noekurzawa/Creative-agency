@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
 }
 
 /* HEADER */
@@ -61,15 +62,11 @@ header span {
 
 
 /* SECTION-HOME*/
-section {
+section.home {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-section.home {
-    height: 100vh;
     background-image: url("../img/people-2569234_1920.jpg");
     background-size: cover;
     background-position: center;
@@ -83,10 +80,11 @@ section.home {
     background-color: rgba(0, 0, 0, .8);
 }
 
-.hero-text {
+.home .hero-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     height: 100vh;
     z-index: 5;
 }
@@ -98,6 +96,7 @@ button {
 }
 
 .hero-text h4 {
+    align-self: flex-start;
     color: #FF6600;
     font-size: 17px;
     letter-spacing: 1px;
@@ -129,7 +128,6 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
     width: 90%;
 }
 
@@ -151,11 +149,10 @@ section.about h3 {
     border-radius: 15px;
 }
 
-.heading-map {
+section.about {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 160vh;
     width: 100vw;
     background-attachment: fixed;
     background-image: url("/img/germany-map_640.png");
