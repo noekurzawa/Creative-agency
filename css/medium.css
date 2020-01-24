@@ -1,63 +1,13 @@
 /* min-width:768px */
-.home .wrapper {
-  width: 90%;
-}
 
 header p {
   font-weight: 400;
 }
 
-header span {
-  font-weight: 700;
-}
-
-section .home {
-  margin-top: 30px;
-}
-
-.home .hero-text h4 {
-  font-size: 20px;
+.home .wrapper {
+  width: 80%;
 }
 
 .hero-text h1 {
-  margin-bottom: 25px;
-  font-size: 55px;
-}
-
-.hero-text button {
-  margin: 30px 0;
-  padding: 12px 14px;
-  font-size: 14px;
-}
-
-@media (min-width: 800px) and (orientation:landscape) {
-.home .wrapper {
-    width: 80%;
-  }
-
-  .hero-text h1 {
-    font-size: 35px;
-  }
-}
-
-@media (min-width: 820px) and (orientation:landscape) {
-  .hero-text h1 {
-    font-size: 55px;
-  }
-}
-
-@media (min-width: 992px) {
-  .nav-mobile {
-    display: none;
-  }
-
-  .nav-desktop {
-    display: block;
-  }
-
-  .nav-desktop a {
-    padding: 15px 0px 15px 15px;
-    font-size: 18px;
-    font-weight: 400;
-  }
+  font-size: 40px;
 }

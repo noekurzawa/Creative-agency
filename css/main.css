@@ -1,165 +1,259 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
-    overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 
 /* HEADER */
-.home .wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 90%;
 }
 
 .nav-desktop {
-    display: none;
+  display: none;
 }
 
 .nav-desktop a {
-    padding: 20px 5px 20px 5px;
-    font-size: 19px;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: black;
-    font-weight: 700;
+  padding: 20px 5px 20px 5px;
+  font-size: 19px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-weight: 700;
 }
 
 .nav-mobile i {
-    padding: 5px 10px;
-    font-size: 30px;
+  display: block;
+  padding: 5px 10px;
+  font-size: 30px;
 }
 
-/* HEADER */
 header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 45px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 45px;
+  background-color: white;
+  z-index: 10;
 }
 
 .header-box-desktop {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 header p {
-    color: black;
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: 20px;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 20px;
 }
 
 header span {
-    color: rgb(255, 102, 0);
-    font-size: 25px;
-    font-weight: 700;
+  color: rgb(255, 102, 0);
+  font-size: 25px;
+  font-weight: 700;
 }
 
-
 /* SECTION-HOME*/
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 section.home {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url("../img/people-2569234_1920.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-image: url("../img/people-2569234_1920.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .hero-shadow {
-    position: absolute;
-    height: 100vh;
-    width: 100vw;
-    background-color: rgba(0, 0, 0, .8);
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  /* margin-top: 45px; */
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 45px; */
 }
 
 .home .hero-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    z-index: 5;
+  height: 100vh;
+  z-index: 5;
 }
 
 .hero-text h1,
 p,
 button {
-    color: white;
+  color: white;
 }
 
 .hero-text h4 {
-    align-self: flex-start;
-    color: #FF6600;
-    font-size: 17px;
-    letter-spacing: 1px;
+  align-self: flex-start;
+  margin-top: 45px;
+  color: #ff6600;
+  font-size: 17px;
+  letter-spacing: 1px;
 }
 
 .hero-text h1 {
-    margin-bottom: 20px;
-    font-size: 25px;
+  margin-bottom: 20px;
+  font-size: 25px;
 }
 
 .hero-text p {
-    font-size: 14px;
-    letter-spacing: 1px;
+  font-size: 14px;
+  letter-spacing: 1px;
 }
 
 .hero-text button {
-    margin: 20px 0 15px 0;
-    padding: 10px 14px;
-    text-transform: uppercase;
-    font-size: 14px;
-    border: none;
-    border-radius: 5px;
-    background-color: rgb(255, 102, 0);
-    letter-spacing: 1px;
+  margin: 20px 0;
+  padding: 10px 14px;
+  text-transform: uppercase;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(255, 102, 0);
+  letter-spacing: 1px;
 }
 
 /* SECTION-ABOUT */
-.about .wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 90%;
+/* section.about {
+  background-image: url("/img/germany-map_640.png");
+} */
+
+.about .hero-text {
+  margin-top: 30px;
 }
 
 section.about h1,
 section.about p {
-    color: black;
+  color: black;
 }
 
 section.about h3 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.about button {
+  align-self: flex-start;
+}
+
+.about-photos {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-gap: 10px;
+  margin-bottom: 30px;
 }
 
 .about-photos img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-    width: 100%;
-    border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  border-radius: 15px;
 }
 
-section.about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    background-attachment: fixed;
-    background-image: url("/img/germany-map_640.png");
-    background-position: center;
-    background-size: cover;
+/* SECTION-SPECIAL-FEATURES */
+
+section.special-features {
+  background-image: url("/img/germany-map_640.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
-.about-photos img {
-    margin-top: 20px;
+.special-features p {
+  margin-top: 20px;
+  color: black;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+  width: 55px;
+  border: 2px solid rgb(224, 224, 224);
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+
+.circle i {
+  font-size: 20px;
+}
+
+.container {
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 80%;
+}
+
+.package {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+  border: 5px solid rgb(224, 224, 224);
+  border-radius: 5px;
+}
+
+.first-design .circle {
+  color: rgb(216, 58, 0);
+  background-color: orange;
+}
+
+.second-quality .circle {
+  color: blueviolet;
+  background-color: rgb(202, 160, 241);
+}
+
+.third-services .circle {
+  color: blue;
+  background-color: rgb(36, 186, 255);
+}
+
+.fourth-support .circle {
+  color: rgb(255, 20, 20);
+  background-color: rgb(252, 216, 222);
+}
+
+section.awards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.awards p {
+  color: black;
+  font-size: 20px;
 }

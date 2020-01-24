@@ -1,4 +1,15 @@
 /* min-width:992px */
-.home .hero-text h4 {
-  margin-top: -190px;
+
+.nav-mobile {
+  display: none;
+}
+
+.nav-desktop {
+  display: block;
+}
+
+.nav-desktop a {
+  padding: 15px 0px 15px 15px;
+  font-size: 18px;
+  font-weight: 400;
 }
