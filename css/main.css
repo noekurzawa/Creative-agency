@@ -87,7 +87,6 @@ section.home {
   position: absolute;
   height: 100vh;
   width: 100vw;
-  /* margin-top: 45px; */
   background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -95,8 +94,7 @@ section.home {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  /* margin-top: 45px; */
+  align-items: flex-start;
 }
 
 .home .hero-text {
@@ -110,9 +108,13 @@ button {
   color: white;
 }
 
-.hero-text h4 {
-  align-self: flex-start;
+.home .hero-text h4 {
   margin-top: 45px;
+}
+
+.hero-text h4 {
+  margin-top: 30px;
+  align-self: flex-start;
   color: #ff6600;
   font-size: 17px;
   letter-spacing: 1px;
@@ -128,6 +130,10 @@ button {
   letter-spacing: 1px;
 }
 
+.home .hero-text button {
+  align-self: center;
+}
+
 .hero-text button {
   margin: 20px 0;
   padding: 10px 14px;
@@ -139,15 +145,7 @@ button {
   letter-spacing: 1px;
 }
 
-/* SECTION-ABOUT */
-/* section.about {
-  background-image: url("/img/germany-map_640.png");
-} */
-
-.about .hero-text {
-  margin-top: 30px;
-}
-
+/* SECTION ABOUT */
 section.about h1,
 section.about p {
   color: black;
@@ -165,7 +163,7 @@ section.about h3 {
   display: grid;
   grid-template-columns: 2fr 2fr;
   grid-gap: 10px;
-  margin-bottom: 30px;
+  margin: 30px 0;
 }
 
 .about-photos img {
@@ -178,12 +176,15 @@ section.about h3 {
 }
 
 /* SECTION-SPECIAL-FEATURES */
-
 section.special-features {
   background-image: url("/img/germany-map_640.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+}
+
+.special-features .wrapper {
+  width: 70%;
 }
 
 .special-features p {
@@ -245,15 +246,35 @@ section.special-features {
   background-color: rgb(252, 216, 222);
 }
 
+/* SECTION AWARDS */
 section.awards {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100px;
 }
 
-.awards p {
+.awards .wrapper{
+  display: flex;
+}
+
+.awards img {
+  height: 90px;
+  width: 90px;
+}
+
+.awards .box{
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  grid-gap: 10px;
+}
+
+.box h3 {
   color: black;
   font-size: 20px;
+}
+
+.awards .text{
+  justify-self: center;
+  align-self: center;
 }
