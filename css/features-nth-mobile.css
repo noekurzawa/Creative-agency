@@ -1,0 +1,42 @@
+/* FEATURES-SECTION */
+
+.package:first-child{
+    margin-top: 30px;
+    background-image: url("/img/background\ HD.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 1;
+  }
+  
+  .main-box:nth-child(2n) {
+    align-self: flex-start;
+  }
+  
+  .package:nth-child(2n+1) {
+    align-self: flex-end;
+  }
+  
+  .package:nth-of-type(2){
+    background-image: url("/img/background\ HD.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 2;
+  }
+  
+  .package:nth-of-type(3){
+    background-image: url("/img/background\ HD.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 2;
+  }
+  
+  .package:last-child{
+    background-image: url("/img/background\ HD.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 3;
+  }

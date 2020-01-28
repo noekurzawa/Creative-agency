@@ -167,6 +167,7 @@ section.about h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   height: 200px;
   width: 100%;
   border-radius: 5px;
@@ -182,8 +183,7 @@ section.about h3 {
 }
 
 .special-features .wrapper {
-  padding-bottom: 20px;
-  /* width: 70%; */
+  padding-bottom: 30px;
 }
 
 .special-features .package {
@@ -191,7 +191,7 @@ section.about h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 300px;
+  height: 330px;
   width: 70%;
   margin-top: -15px;
   border: 1px solid white;
@@ -199,25 +199,9 @@ section.about h3 {
   
 }
 
-.package:first-child{
-  margin-top: 20px;
+.package .hero-text{
+  margin: 0 15px 15px 15px;
 }
-
-.main-box:nth-child(2n) {
-  align-self: flex-start;
-}
-
-.package:nth-child(2n+1) {
-  align-self: flex-end;
-}
-
-/* .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 85%;
-} */
 
 .special-features .hero-text h4{
   margin-top: 30px;
@@ -242,8 +226,11 @@ section.about h3 {
   margin-top: 20px;
 }
 
-.circle i {
-  font-size: 20px;
+.circle-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .circle {
@@ -253,8 +240,12 @@ section.about h3 {
   height: 55px;
   width: 55px;
   border: 2px solid white;
-  margin-bottom: 20px;
+  margin: 20px 0;
   border-radius: 50%;
+}
+
+.circle i {
+  font-size: 20px;
 }
 
 .first-design .circle {
@@ -346,26 +337,12 @@ section.awards {
   padding: 30px 0;
 }
 
-.awards .text:first-child {
-  margin-top: 0;
-}
-
-.awards .text:nth-child(2n) {
-  align-self: flex-start;
-}
-
-.awards .text:nth-child(2n+1) {
-  align-self: flex-end;
-}
-
 .awards .text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 130px;
-  /* width: 180px;
-  margin-top: 30px; */
   width: 60%;
   margin-top: -30px;
   border: 1px solid white;
