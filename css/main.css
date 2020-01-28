@@ -19,29 +19,21 @@
   display: none;
 }
 
-.nav-desktop a {
-  padding: 20px 5px 20px 5px;
-  font-size: 19px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: black;
-  font-weight: 700;
-}
-
 .nav-mobile i {
   display: block;
   padding: 5px 10px;
   font-size: 30px;
+  color: rgb(0, 0, 0);
 }
 
 header {
-  position: absolute;
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 45px;
-  background-color: white;
+  background-color: rgb(175, 175, 175);
   z-index: 10;
 }
 
@@ -70,6 +62,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: black;
 }
 
 section.home {
@@ -90,7 +83,7 @@ section.home {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.hero-text {
+.home .hero-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -102,9 +95,7 @@ section.home {
   z-index: 5;
 }
 
-.hero-text h1,
-p,
-button {
+.home {
   color: white;
 }
 
@@ -113,7 +104,6 @@ button {
 }
 
 .hero-text h4 {
-  margin-top: 30px;
   align-self: flex-start;
   color: #ff6600;
   font-size: 17px;
@@ -130,12 +120,9 @@ button {
   letter-spacing: 1px;
 }
 
-.home .hero-text button {
-  align-self: center;
-}
-
 .hero-text button {
-  margin: 20px 0;
+  align-self: center;
+  margin-top: 20px;
   padding: 10px 14px;
   text-transform: uppercase;
   font-size: 14px;
@@ -143,12 +130,17 @@ button {
   border-radius: 5px;
   background-color: rgb(255, 102, 0);
   letter-spacing: 1px;
+  transition: .3s;
+}
+
+button:hover {
+  color: #85817f;
+  cursor: pointer;
 }
 
 /* SECTION ABOUT */
-section.about h1,
-section.about p {
-  color: black;
+.about h4 {
+  margin-top: 30px;
 }
 
 section.about h3 {
@@ -156,40 +148,102 @@ section.about h3 {
 }
 
 .about button {
-  align-self: flex-start;
+  align-self: center;
 }
 
 .about-photos {
   display: grid;
-  grid-template-columns: 2fr 2fr;
   grid-gap: 10px;
   margin: 30px 0;
+}
+
+@media(orientation:landscape) {
+  .about-photos img {
+    height: 130px;
+  }
 }
 
 .about-photos img {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px;
+  height: 200px;
   width: 100%;
-  border-radius: 15px;
+  border-radius: 5px;
 }
 
 /* SECTION-SPECIAL-FEATURES */
-section.special-features {
-  background-image: url("/img/germany-map_640.png");
-  background-size: cover;
+.special-features{
+  color: white;
+  background-image: url("/img/background_1280.jpg");
   background-position: center;
+  background-size: cover;
   background-attachment: fixed;
 }
 
 .special-features .wrapper {
+  padding-bottom: 20px;
+  /* width: 70%; */
+}
+
+.special-features .package {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
   width: 70%;
+  margin-top: -15px;
+  border: 1px solid white;
+  border-radius: 5px;
+  
+}
+
+.package:first-child{
+  margin-top: 20px;
+}
+
+.main-box:nth-child(2n) {
+  align-self: flex-start;
+}
+
+.package:nth-child(2n+1) {
+  align-self: flex-end;
+}
+
+/* .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+} */
+
+.special-features .hero-text h4{
+  margin-top: 30px;
+}
+
+.special-features .hero-text h1{
+  margin-bottom: 0;
+}
+
+
+.main-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.special-features h3 {
+  text-align: center;
 }
 
 .special-features p {
   margin-top: 20px;
-  color: black;
+}
+
+.circle i {
+  font-size: 20px;
 }
 
 .circle {
@@ -198,32 +252,9 @@ section.special-features {
   align-items: center;
   height: 55px;
   width: 55px;
-  border: 2px solid rgb(224, 224, 224);
+  border: 2px solid white;
   margin-bottom: 20px;
   border-radius: 50%;
-}
-
-.circle i {
-  font-size: 20px;
-}
-
-.container {
-  padding: 40px 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  width: 80%;
-}
-
-.package {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 20px;
-  border: 5px solid rgb(224, 224, 224);
-  border-radius: 5px;
 }
 
 .first-design .circle {
@@ -243,7 +274,60 @@ section.special-features {
 
 .fourth-support .circle {
   color: rgb(255, 20, 20);
-  background-color: rgb(252, 216, 222);
+  background-color: rgb(26, 138, 182);
+}
+
+/* TEAM-MEMBERS */
+.team-members .team-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.personal-date {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 30%;
+}
+
+.members {
+  height: 330px;
+  width: 100%;
+  margin-bottom: 30px;
+  overflow-y: hidden;
+  border: 1px solid black;
+}
+
+.members img {
+  height: 70%;
+  width: 100%;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 70%;
+}
+
+.team-members h4 {
+  margin-top: 30px;
+}
+
+.team-members p {
+  text-align: center;
+}
+
+.media {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 10px 0;
+  border: 1px solid black;
 }
 
 /* SECTION AWARDS */
@@ -252,29 +336,50 @@ section.awards {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url("/img/background_640.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-.awards .wrapper{
+.awards .wrapper {
+  padding: 30px 0;
+}
+
+.awards .text:first-child {
+  margin-top: 0;
+}
+
+.awards .text:nth-child(2n) {
+  align-self: flex-start;
+}
+
+.awards .text:nth-child(2n+1) {
+  align-self: flex-end;
+}
+
+.awards .text {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 130px;
+  /* width: 180px;
+  margin-top: 30px; */
+  width: 60%;
+  margin-top: -30px;
+  border: 1px solid white;
+  border-radius: 10px;
 }
 
-.awards img {
-  height: 90px;
-  width: 90px;
-}
-
-.awards .box{
-  display: grid;
-  grid-template-columns: 2fr 4fr;
-  grid-gap: 10px;
-}
-
-.box h3 {
-  color: black;
+.awards h3 {
+  text-align: center;
+  color: white;
   font-size: 20px;
 }
 
-.awards .text{
-  justify-self: center;
-  align-self: center;
+.awards p {
+  text-align: center;
+  font-size: 15px;
+  color: white;
 }

@@ -1,9 +1,26 @@
 /* min-width:768px */
 
-header p {
-  font-weight: 400;
+.home{
+    background-image: url("/img/people-2569234_1920.jpg");
+}
+
+
+.home .hero-text {
+  width: 80%;
 }
 
 .hero-text h1 {
-  font-size: 40px;
+  font-size: 30px;
+}
+
+.about-photos img {
+  height: 180px;
+}
+
+.special-features .wrapper {
+  width: 90%;
+}
+
+section.awards {
+  background-image: url("/img/background_1920.jpg"); 
 }
