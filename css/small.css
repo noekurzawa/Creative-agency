@@ -13,7 +13,6 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-
 }
 
 .about-photos img {
@@ -39,16 +38,17 @@ header {
     margin-top: -130px;
 }
 
-.package:first-child{
+.package:first-child {
     margin-top: 30px;
 }
 
-.package .hero-text{
-    margin: 0 40px 15px 40px;
+.package .text {
+    width: 80%;
+    margin: 0px 50px 15px 60px;
 }
 
 .members {
-    width: 47%;
+    width: 48%;
 }
 
 .team-members .team-box {

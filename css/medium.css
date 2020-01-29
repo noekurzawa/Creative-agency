@@ -1,26 +1,64 @@
 /* min-width:768px */
 
-.home{
-    background-image: url("/img/people-2569234_1920.jpg");
+.home {
+  background-image: url("/img/people-2569234_1920.jpg");
 }
 
-
-.home .hero-text {
-  width: 80%;
-}
-
-.hero-text h1 {
+.home .hero-text h1 {
   font-size: 30px;
 }
 
 .about-photos img {
-  height: 180px;
+  height: 210px;
 }
 
-.special-features .wrapper {
-  width: 90%;
+.special-features .wrapper,
+.team-members .wrapper {
+  display: block;
+  padding-bottom: 30px;
 }
 
-section.awards {
-  background-image: url("/img/background_1920.jpg"); 
+@media(orientation:landscape) {
+  .home .hero-text {
+    align-items: center;
+  }
+
+  .home .hero-text h4 {
+    font-size: 18px;
+  }
+
+  .home .hero-text h1 {
+    font-size: 30px;
+  }
+
+  .home .hero-text p {
+    text-align: center;
+    font-size: 13x;
+  }
+
+  .special-features .wrapper {
+    padding-bottom: 30px;
+  }
+
+  .special-features .hero-text h4 {
+    margin-top: 30px;
+  }
+}
+
+@media(orientation:portrait) {
+  .special-features .wrapper {
+    padding: 40px 0;
+  }
+
+  .special-features .hero-text h4 {
+    margin-top: 0;
+  }
+
+  .circle {
+    margin: 10px 0 0 0;
+  }
+
+  section.awards {
+    background-image: url("/img/background_1920.jpg");
+  }
 }

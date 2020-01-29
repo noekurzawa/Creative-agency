@@ -1,7 +1,24 @@
 /* min-width:992px */
 
-.home{
+.home {
   background-image: url("/img/people-2569234.jpg");
+}
+
+.home .hero-text {
+  align-items: center;
+}
+
+.home .hero-text h4 {
+  font-size: 20px;
+}
+
+.home .hero-text h1 {
+  font-size: 34px;
+}
+
+
+.home .hero-text p {
+  font-size: 13px;
 }
 
 .nav-mobile {
@@ -30,34 +47,8 @@
   cursor: pointer;
 }
 
-.home .hero-text {
-  width: 70%;
-}
-
 .about {
   padding-top: 0;
-}
-
-.about h4 {
-  margin-top: 0;
-}
-
-.about-photos {
-  grid-gap: 30px 40px;
-}
-
-.about .hero-text {
-  width: 90%;
-}
-
-.about .wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.wrapper .main-box {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 @media(min-width:1300px) {
@@ -65,8 +56,20 @@
     width: 750px;
   }
 
+  header {
+    height: 55px;
+  }
+
+  .about-photos img {
+    height: 280px;
+  }
+
   .special-features {
-    height: 400px;
+    height: 870px;
+  }
+
+  .members {
+    width: 23%;
   }
 }
 
@@ -76,6 +79,21 @@
   }
 }
 
+.special-features .package:first-child {
+  margin-top: 0px;
+}
+
+.special-features .package {
+  height: 280px;
+}
+
 section.awards {
-  background-image: url("/img/background\ HD.jpg"); 
+  background-image: url("/img/background\ HD.jpg");
+}
+
+@media(min-width:2000px){
+  .members {
+    height: 400px;
+    width: 20%;
+  }
 }

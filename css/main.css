@@ -104,7 +104,6 @@ section.home {
 }
 
 .hero-text h4 {
-  align-self: flex-start;
   color: #ff6600;
   font-size: 17px;
   letter-spacing: 1px;
@@ -174,7 +173,7 @@ section.about h3 {
 }
 
 /* SECTION-SPECIAL-FEATURES */
-.special-features{
+.special-features {
   color: white;
   background-image: url("/img/background_1280.jpg");
   background-position: center;
@@ -184,6 +183,11 @@ section.about h3 {
 
 .special-features .wrapper {
   padding-bottom: 30px;
+}
+
+.special-features .wrapper,
+.team-members .wrapper {
+  display: block;
 }
 
 .special-features .package {
@@ -196,21 +200,21 @@ section.about h3 {
   margin-top: -15px;
   border: 1px solid white;
   border-radius: 5px;
-  
+
 }
 
-.package .hero-text{
-  margin: 0 15px 15px 15px;
+.package .text {
+  width: 85%;
+  margin: 0px 20px 25px 20px;
 }
 
-.special-features .hero-text h4{
+.special-features .hero-text h4 {
   margin-top: 30px;
 }
 
-.special-features .hero-text h1{
+.special-features .hero-text h1 {
   margin-bottom: 0;
 }
-
 
 .main-box {
   display: flex;
@@ -226,7 +230,7 @@ section.about h3 {
   margin-top: 20px;
 }
 
-.circle-box{
+.circle-box {
   display: flex;
   justify-content: center;
   align-items: center;
