@@ -63,3 +63,13 @@ section.awards {
     width: 60%;
     margin-top: -50px;
 }
+
+
+/* SECTION CONTACT-US */
+.contact-us .wrapper .line {
+    display: none;
+}
+
+.data .hero {
+    width: 50%;
+}

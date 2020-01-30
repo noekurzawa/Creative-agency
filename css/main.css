@@ -119,7 +119,7 @@ section.home {
   letter-spacing: 1px;
 }
 
-.hero-text button {
+button {
   align-self: center;
   margin-top: 20px;
   padding: 10px 14px;
@@ -360,12 +360,59 @@ section.awards {
 }
 
 /* SECTION FORM */
-
-section.form{
-  height: 400px;
+section.contact-us {
+  align-items: flex-start;
+  padding-bottom: 30px;
 }
 
+section.contact-us .wrapper {
+  align-items: flex-start;
+}
 
+.contact-us h4 {
+  margin-top: 30px;
+}
+
+.data .hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.data {
+  margin-bottom: 30px;
+}
+
+.data p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.data .maps:first-child {
+  margin-top: 20px;
+}
+
+.data img {
+  height: 30px;
+  width: 30px;
+}
+
+.line{
+  height: 1px;
+  width: 100%;
+  margin-bottom: 30px;
+  background-color: #ff6600;
+}
+
+.main-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 390px;
+}
 
 /* SECTION INFORMATIONS */
 .informations {
@@ -377,14 +424,15 @@ section.form{
   background-color: rgba(2, 4, 66, 0.897);
 }
 
-.informations .wrapper{
+.informations .wrapper {
   align-items: flex-start;
 }
+
 .maxona p:first-child {
-  margin-top: 30px;
+  margin: 30px 0 5px 0;
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .maxona span {
@@ -393,28 +441,35 @@ section.form{
   font-weight: 700;
 }
 
-.our-services{
+.our-services {
   margin-top: 30px;
 }
 
-.instagram-feed{
+.our-services h3 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.instagram-feed {
   display: flex;
-  justify-content: space-between;
   width: 100%;
   margin-top: 30px;
 }
 
-.instagram-feed img{
-  height:50px;
+.instagram-feed img {
+  height: 50px;
   width: 50px;
+  margin-right: 10px;
+  border: 2px solid white;
+  border-radius: 5%;
 }
 
-.contact-info{
+.contact-info {
   margin: 30px 0;
   letter-spacing: 1px;
 }
 
-.contact-info p{
+.contact-info p {
   margin-top: 10px;
 }
 
@@ -422,7 +477,11 @@ section.form{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80px;
+  height: 50px;
   color: white;
   background-color: rgba(0, 1, 32, 0.897);
+}
+
+.footer p {
+  font-size: 13px;
 }
