@@ -54,11 +54,11 @@
     margin-top: 0;
   }
 
-  .circle {
-    margin: 10px 0 0 0;
-  }
-
   section.awards {
     background-image: url("/img/background_1920.jpg");
   }
+}
+
+.media {
+  height: 36px;
 }

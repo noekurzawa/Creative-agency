@@ -205,7 +205,6 @@ section.about h3 {
 
 .package .text {
   width: 85%;
-  margin: 0px 20px 25px 20px;
 }
 
 .special-features .hero-text h4 {
@@ -244,7 +243,7 @@ section.about h3 {
   height: 55px;
   width: 55px;
   border: 2px solid white;
-  margin: 20px 0;
+  margin-bottom: 20px;
   border-radius: 50%;
 }
 
@@ -302,13 +301,6 @@ section.about h3 {
   width: 100%;
 }
 
-.text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 70%;
-}
-
 .team-members h4 {
   margin-top: 30px;
 }
@@ -320,8 +312,10 @@ section.about h3 {
 .media {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  height: 32px;
   width: 100%;
-  padding: 10px 0;
+  /* padding: 10px 0; */
   border: 1px solid black;
 }
 
@@ -363,4 +357,72 @@ section.awards {
   text-align: center;
   font-size: 15px;
   color: white;
+}
+
+/* SECTION FORM */
+
+section.form{
+  height: 400px;
+}
+
+
+
+/* SECTION INFORMATIONS */
+.informations {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  background-color: rgba(2, 4, 66, 0.897);
+}
+
+.informations .wrapper{
+  align-items: flex-start;
+}
+.maxona p:first-child {
+  margin-top: 30px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.maxona span {
+  color: rgb(255, 102, 0);
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.our-services{
+  margin-top: 30px;
+}
+
+.instagram-feed{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.instagram-feed img{
+  height:50px;
+  width: 50px;
+}
+
+.contact-info{
+  margin: 30px 0;
+  letter-spacing: 1px;
+}
+
+.contact-info p{
+  margin-top: 10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  color: white;
+  background-color: rgba(0, 1, 32, 0.897);
 }
