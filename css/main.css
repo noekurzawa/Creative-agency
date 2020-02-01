@@ -4,9 +4,14 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 /* HEADER */
+header .wrapper {
+  flex-direction: row;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -19,9 +24,9 @@
   display: none;
 }
 
-.nav-mobile i {
-  display: block;
-  padding: 5px 10px;
+.menu {
+  display: flex;
+  padding: 0 10px;
   font-size: 30px;
   color: rgb(0, 0, 0);
 }
@@ -33,14 +38,15 @@ header {
   align-items: center;
   width: 100%;
   height: 45px;
-  background-color: rgb(175, 175, 175);
+  background-color: white;
   z-index: 10;
 }
 
-.header-box-desktop {
+.header-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 45px;
   width: 100%;
 }
 
@@ -70,27 +76,25 @@ section.home {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background-image: url("../img/people-2569234_1920.jpg");
+  background-image: url("../img/home.jpg");
+  /* background-image: url("../img/people-2569234_1920.jpg"); */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 
-.hero-shadow {
+/* .hero-shadow {
   position: absolute;
   height: 100vh;
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0.8);
-}
+  background-color: rgba(0, 0, 0, .3);
+} */
 
 .home .hero-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-}
-
-.home .hero-text {
   height: 100vh;
   z-index: 5;
 }
@@ -120,9 +124,9 @@ section.home {
 }
 
 button {
-  align-self: center;
   margin-top: 20px;
   padding: 10px 14px;
+  color: white;
   text-transform: uppercase;
   font-size: 14px;
   border: none;
@@ -133,7 +137,7 @@ button {
 }
 
 button:hover {
-  color: #85817f;
+  color: #000000;
   cursor: pointer;
 }
 
@@ -144,10 +148,6 @@ button:hover {
 
 section.about h3 {
   margin-bottom: 20px;
-}
-
-.about button {
-  align-self: center;
 }
 
 .about-photos {
@@ -175,6 +175,7 @@ section.about h3 {
 /* SECTION-SPECIAL-FEATURES */
 .special-features {
   color: white;
+  /* background-image: url("../img/home.jpg"); */
   background-image: url("/img/background_1280.jpg");
   background-position: center;
   background-size: cover;
@@ -309,14 +310,23 @@ section.about h3 {
   text-align: center;
 }
 
-.media {
+.members .media {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 32px;
+  height: 45px;
   width: 100%;
   /* padding: 10px 0; */
   border: 1px solid black;
+}
+
+.members .media a {
+  color: black;
+}
+
+.members .media a {
+  font-size: 19px;
+  padding: 5px 30px;
 }
 
 /* SECTION AWARDS */
@@ -325,6 +335,7 @@ section.awards {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* background-image: url("../img/home.jpg"); */
   background-image: url("/img/background_640.jpg");
   background-position: center;
   background-size: cover;
@@ -373,6 +384,11 @@ section.contact-us .wrapper {
   margin-top: 30px;
 }
 
+.data {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
 .data .hero {
   display: flex;
   flex-direction: column;
@@ -381,9 +397,6 @@ section.contact-us .wrapper {
   margin-top: 40px;
 }
 
-.data {
-  margin-bottom: 30px;
-}
 
 .data p {
   text-align: center;
@@ -399,7 +412,7 @@ section.contact-us .wrapper {
   width: 30px;
 }
 
-.line{
+.line {
   height: 1px;
   width: 100%;
   margin-bottom: 30px;
@@ -471,6 +484,58 @@ section.contact-us .wrapper {
 
 .contact-info p {
   margin-top: 10px;
+}
+
+/* FORM */
+.contact-us .wrapper .form-box:last-child {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+input {
+  height: 40px;
+  border: none;
+}
+
+input,
+textarea {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid rgb(165, 162, 162);
+  font-size: 16px;
+}
+
+.form-box {
+  height: 380px;
+}
+
+.form-box button input {
+  padding: 10px 14px;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  background-color: rgb(255, 102, 0);
+  font-size: 14px;
+  transition: .3s;
+}
+
+.form-box button {
+  padding: 0;
+  align-self: flex-start;
+  margin-top: 0;
+}
+
+.form-box button input:hover {
+  color: #000000;
+  cursor: pointer;
 }
 
 .footer {

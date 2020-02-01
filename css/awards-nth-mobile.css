@@ -12,7 +12,8 @@
     align-self: flex-end;
 }
 
- .text:nth-of-type(2) {
+.text:nth-of-type(2) {
+    /* background-image: url("../img/home.jpg"); */
     background-image: url("/img/background_640.jpg");
     background-position: center;
     background-size: cover;
@@ -21,6 +22,7 @@
 }
 
 .text:nth-of-type(3) {
+    /* background-image: url("../img/home.jpg"); */
     background-image: url("/img/background_640.jpg");
     background-position: center;
     background-size: cover;

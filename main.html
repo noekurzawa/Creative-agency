@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="./css/main.css" />
   <link rel="stylesheet" href="./css/features-nth-mobile.css" />
   <link rel="stylesheet" href="./css/awards-nth-mobile.css" />
+  <link rel="stylesheet" href="./css/hamburger.css">
   <link rel="stylesheet" media="screen and (min-width:568px)" href="./css/small.css" />
   <link rel="stylesheet" media="screen and (min-width:768px)" href="./css/medium.css" />
   <link rel="stylesheet" media="screen and (min-width:992px)" href="./css/large.css" />
@@ -22,20 +23,30 @@
   <body>
     <header>
       <div class="wrapper">
-        <div class="header-box-desktop">
+        <div class="header-box">
           <p>ma<span>x</span>ona</p>
           <nav class="nav-desktop">
             <a href="#">home</a>
             <a href="#about">about</a>
             <a href="#features">features</a>
+            <a href="#team">team</a>
             <a href="#experience">experience</a>
-            <a href="#blog">blog</a>
             <a href="#contact">contact</a>
           </nav>
-          <div class="nav-mobile"><i class="fas fa-bars"></i></div>
+          <button class="menu"><i class="fas fa-bars"></i></button>
         </div>
       </div>
     </header>
+    <aside>
+      <ul class="list-mobile">
+        <li><a href="#">home</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#features">features</a></li>
+        <li><a href="#team">team</a></li>
+        <li><a href="#experience">experience</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+    </aside>
     <div class="hero-shadow"></div>
     <div class="wrapper">
       <div class="hero-text">
@@ -66,10 +77,11 @@
       <button class="hero-button">learn more</button>
     </div>
     <div class="about-photos">
-      <img src="./img/board-1364652_1280.jpg" alt="" />
-      <img src="./img/technology-3435575_1280.jpg" alt="" />
-      <img src="./img/artificial-intelligence-3382507_1280.jpg" alt="" />
-      <img src="./img/industry-3087393_1280.jpg" alt="" />
+        <img src="./img/board-1364652_1280.jpg" alt=""/>
+        <img src="./img/technology-3435575_1280.jpg" alt=""/>
+        <img src="./img/artificial-intelligence-3382507_1280.jpg" alt=""/>
+        <img src="./img/industry-3087393_1280.jpg" alt=""/>
+      </div>
     </div>
   </div>
 </section>
@@ -134,7 +146,7 @@
     </div>
   </div>
 </section>
-<section class="team-members">
+<section class="team-members" id="team">
   <div class="wrapper">
     <div class="hero-text">
       <h4>Team members</h4>
@@ -149,9 +161,10 @@
             <p>Director</p>
           </div>
           <div class="media">
-            <i class="fab fa-linkedin-in"></i>
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-twitter"></i>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://pl.linkedin.com/?trk=organization_guest_nav-header-logo" target="_blank" rel="noopener"><i
+                class="fab fa-linkedin-in"></i></a>
+            <a href="https://twitter.com/?lang=pl" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
           </div>
         </div>
       </div>
@@ -163,9 +176,10 @@
             <p>Web Designer</p>
           </div>
           <div class="media">
-            <i class="fab fa-linkedin-in"></i>
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-twitter"></i>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://pl.linkedin.com/?trk=organization_guest_nav-header-logo" target="_blank" rel="noopener"><i
+                class="fab fa-linkedin-in"></i></a>
+            <a href="https://twitter.com/?lang=pl" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
           </div>
         </div>
       </div>
@@ -177,9 +191,10 @@
             <p>Leader</p>
           </div>
           <div class="media">
-            <i class="fab fa-linkedin-in"></i>
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-twitter"></i>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://pl.linkedin.com/?trk=organization_guest_nav-header-logo" target="_blank" rel="noopener"><i
+                class="fab fa-linkedin-in"></i></a>
+            <a href="https://twitter.com/?lang=pl" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
           </div>
         </div>
       </div>
@@ -191,16 +206,17 @@
             <p>Front-End Developer</p>
           </div>
           <div class="media">
-            <i class="fab fa-linkedin-in"></i>
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-twitter"></i>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://pl.linkedin.com/?trk=organization_guest_nav-header-logo" target="_blank" rel="noopener"><i
+                class="fab fa-linkedin-in"></i></a>
+            <a href="https://twitter.com/?lang=pl" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<section class="awards">
+<section class="awards" id="experience">
   <div class="wrapper">
     <div class="text">
       <h3>95%</h3>
@@ -224,60 +240,58 @@
     </div>
   </div>
 </section>
-<section class="contact-us">
+<section class="contact-us" id="contact">
   <div class="wrapper">
     <div class="hero-text">
       <h4>Contact us</h4>
       <h1>Don't Hesitate, Ask Any Query</h1>
     </div>
     <div class="data">
-        <div class="hero maps">
-          <img src="./icons img/iconmonstr-map-5.svg" alt="">
-          <p>4 Privet Drive, Little Whinging, Surrey England, Great Britain.</p>
-        </div>
-        <div class="hero mail">
-          <img src="./icons img/iconmonstr-email-15.svg" alt="">
-          <p>harrypotter@gmail.com</p>
-        </div>
-        <div class="hero phone">
-          <img src="./icons img/iconmonstr-mobile-thin.svg" alt="">
-          <p>+48 7562-715-707</p>
-        </div>
+      <div class="hero maps">
+        <img src="./icons img/iconmonstr-map-5.svg" alt="">
+        <p>4 Privet Drive<br>Little Whinging<br>Surrey England<br>Great Britain.</p>
+      </div>
+      <div class="hero mail">
+        <img src="./icons img/iconmonstr-email-15.svg" alt="">
+        <p>harrypotter@gmail.com</p>
+      </div>
+      <div class="hero phone">
+        <img src="./icons img/iconmonstr-mobile-thin.svg" alt="">
+        <p>+48 7562-715-707</p>
+      </div>
     </div>
     <div class="line"></div>
-    <div class="main-form">
-      <div class="form full-name">
-        <form action=""></form>
-        <p>Full Name:</p>
-        <textarea name="" id="" cols="30" rows="2"></textarea>
-      </div>
-      <div class="form phone">
-        <form action=""></form>
-        <p>Phone:</p>
-        <textarea name="" id="" cols="30" rows="2"></textarea>
-      </div>
-      <div class="form email">
-        <form action=""></form>
-        <p>Email:</p>
-        <textarea name="" id="" cols="30" rows="2"></textarea>
-      </div>
-      <div class="form your-message">
-        <form action=""></form>
-        <p>Your Message:</p>
-        <textarea name="" id="" cols="30" rows="7"></textarea>
-      </div>
-      <button>send message</button>
+    <div class="form-box">
+      <form action="https://mail.google.com/" target="_blank" rel="noopener" method="get">
+        <div class="window name">
+          <label for="name"></label>
+          <input type="text" id="name" placeholder="Full Name:">
+        </div>
+        <div class="window phone">
+          <label for="Phone"></label>
+          <input type="text" id="Phone" placeholder="Phone:">
+        </div>
+        <div class="window email">
+          <label for="email"></label>
+          <input type="text" id="email" placeholder="Email:">
+        </div>
+        <div class="window message">
+          <label for="message"></label>
+          <textarea name="" id="message" placeholder="Your Message:" cols="30" rows="10"></textarea>
+        </div>
+        <button><input type="submit" value="send message"></button>
+      </form>
     </div>
   </div>
 </section>
 <section class="informations">
   <div class="wrapper">
-    <div class="maxona">
+    <div class="part maxona">
       <p>ma<span>x</span>ona</p>
       <p>Evening creature waters unto fill deeo man given divided whales man kind. Winged open us and there to multiply
         land evening under</p>
     </div>
-    <div class="our-services">
+    <div class="part our-services">
       <h3>Our Services</h3>
       <ul>
         <li>Frontend Developing</li>
@@ -287,22 +301,23 @@
         <li>Wordpress Developing</li>
       </ul>
     </div>
-    <div class="instagram-feed">
+    <div class="part instagram-feed">
       <img src="./img/board-1364652_640.jpg" alt="">
       <img src="./img/technology-3435575_640.jpg" alt="">
       <img src="./img/artificial-intelligence-3382507_640.jpg" alt="">
       <img src="./img/industry-3087393_640.jpg" alt="">
     </div>
-    <div class="contact-info">
-        <p>4 Privet Drive, Little Whinging, Surrey England, Great Britain.</p>
-        <p>harrypotter@gmail.com</p>
-        <p>+48 7562-715-707</p>
+    <div class="part contact-info">
+      <p>4 Privet Drive, Little Whinging, Surrey England, Great Britain.</p>
+      <p>harrypotter<br>@gmail.com</p>
+      <p>+48 7562-715-707</p>
     </div>
   </div>
 </section>
 <section class="footer">
   <p>Copyright <small>&copy</small> 2020 All Rights Reserved</p>
 </section>
+<script src="./js/main.js"></script>
 </body>
 
 </html>

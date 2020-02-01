@@ -1,0 +1,45 @@
+aside {
+    justify-content: center;
+    position: absolute;
+    left: -260px;
+    top: 0;
+    width: 260px;
+    height: 100vh;
+    font-size: 24px;
+    color: #000;
+    background-color: rgba(0, 0, 0, .85);
+    transition: .3s;
+    z-index: 20;
+}
+
+aside ul {
+    margin-top: 50px;
+    list-style: none;
+}
+
+aside li {
+    text-align: center;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+aside a{
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+}
+
+aside li:hover {
+    color: rgb(0, 215, 243);
+}
+
+.active {
+    left: 0;
+    position: fixed;
+}
+
+.home .menu {
+    background: none;
+    margin: 0;
+}

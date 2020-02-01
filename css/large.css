@@ -21,7 +21,7 @@
   font-size: 13px;
 }
 
-.nav-mobile {
+.menu, aside {
   display: none;
 }
 

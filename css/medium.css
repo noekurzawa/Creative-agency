@@ -8,6 +8,14 @@
   font-size: 30px;
 }
 
+header {
+  height: 50px;
+}
+
+.header-box {
+  height: 50px;
+}
+
 .about-photos img {
   height: 210px;
 }
@@ -61,4 +69,41 @@
 
 .media {
   height: 36px;
+}
+
+.informations .wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+.part {
+  width: 20%;
+  flex-wrap: wrap;
+}
+
+.instagram-feed {
+  display: flex;
+  justify-content: center;
+}
+
+.instagram-feed img {
+  margin-right: 0;
+  height: 60px;
+  width: 60px;
+}
+
+.instagram-feed img:nth-of-type(1),
+.instagram-feed img:nth-of-type(3) {
+margin-right: 10px;
+}
+
+.instagram-feed img:nth-of-type(3),
+.instagram-feed img:nth-of-type(4) {
+margin-top: 10px;
+}
+
+.contact-info p:first-child {
+  margin-top: 0;
 }

@@ -4,10 +4,6 @@ section .home {
     background-image: url("/img/people-2569234_1280.jpg");
 }
 
-header {
-    height: 50px;
-}
-
 .about-photos {
     display: flex;
     flex-direction: row;
@@ -70,6 +66,30 @@ section.awards {
     display: none;
 }
 
-.data .hero {
-    width: 50%;
-}
+/* SECTION CONTACT-US */
+.data {
+    display: flex;
+    flex-direction: row;
+    margin: 30px 0;
+  }
+  
+  .data .hero {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    width: 33.33%;
+  }
+  
+  .data .maps:first-child {
+    margin-top: 0;
+  }
+  
+  .data img{
+  height: 40px;
+  width: 40px;
+  }
+  
+  .data p {
+    text-align: center;
+    margin-top: 15px;
+  }
