@@ -1,7 +1,7 @@
 /* min-width:768px */
 
 .home {
-  background-image: url("/img/people-2569234_1920.jpg");
+  background-image: url("../img/people-2569234_1920.jpg");
 }
 
 .home .hero-text h1 {
@@ -67,7 +67,7 @@ header {
   }
 
   section.awards {
-    background-image: url("/img/background_1920.jpg");
+    background-image: url("../img/background_1920.jpg");
   }
 }
 

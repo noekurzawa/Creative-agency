@@ -1,7 +1,7 @@
 /* min-width:576px */
 
 section .home {
-    background-image: url("/img/people-2569234_1280.jpg");
+    background-image: url("../img/people-2569234_1280.jpg");
 }
 
 .about-photos {
@@ -55,7 +55,7 @@ section.about h3 {
 }
 
 section.awards {
-    background-image: url("/img/background_1280.jpg");
+    background-image: url("../img/background_1280.jpg");
 }
 
 .awards .text {
@@ -63,9 +63,3 @@ section.awards {
     width: 60%;
     margin-top: -50px;
 }
-
-
-/* SECTION CONTACT-US */
-
-
-/* SECTION CONTACT-US */
