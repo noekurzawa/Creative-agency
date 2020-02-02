@@ -1,4 +1,11 @@
 /* min-width:992px */
+* {
+  color: white;
+}
+
+body {
+  background-color: white;
+}
 
 .home {
   background-image: url("/img/people-2569234.jpg");
@@ -21,7 +28,8 @@
   font-size: 13px;
 }
 
-.menu, aside {
+.menu,
+aside {
   display: none;
 }
 
@@ -47,53 +55,229 @@
   cursor: pointer;
 }
 
+/* SECTION-ABOUT */
 .about {
   padding-top: 0;
 }
 
-@media(min-width:1300px) {
-  .nav-desktop {
-    width: 750px;
-  }
-
-  header {
-    height: 55px;
-  }
-
-  .about-photos img {
-    height: 280px;
-  }
-
-  .special-features {
-    height: 870px;
-  }
-
-  .members {
-    width: 23%;
-  }
+.about .wrapper {
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-@media(min-width:1400px) {
-  .home .hero-text {
-    width: 50%;
-  }
+.about .hero-text {
+  width: 40%;
 }
 
-.special-features .package:first-child {
-  margin-top: 0px;
+.about h4 {
+  margin-top: 0;
+}
+
+.about .about-photos {
+  width: 50%;
+}
+
+.about-photos img {
+  height: 170px;
+}
+
+/* SECTION-SPECIAL-FEATURES */
+
+.main-box {
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
 }
 
 .special-features .package {
-  height: 280px;
+  margin: 0;
+  width: 23%;
+  height: 325px;
 }
 
-section.awards {
-  background-image: url("/img/background\ HD.jpg");
+/* SECTION-TEAM-MEMBERS */
+.team-members .wrapper {
+  padding-bottom: 0;
 }
 
-@media(min-width:2000px){
-  .members {
-    height: 400px;
-    width: 20%;
-  }
+.members {
+  border: 1px solid white;
+  width: 23%;
+}
+
+.team-members .media {
+  border: 1px solid white;
+}
+
+.team-members .media a {
+  color: white;
+}
+
+/* SECTION-AWARDS */
+
+.awards .wrapper {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.awards .text {
+  margin-top: 0;
+  width: 23%;
+}
+
+.contact-us .wrapper .form-box:last-child {
+  width: 50%;
+}
+
+.huge-box {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.data {
+  width: 50%;
+}
+
+/* DESKTOP-VERSION */
+.home .hero-text h1,
+.home .hero-text p,
+.home .hero-text h4 {
+  color: white !important;
+}
+
+.home .hero-text button {
+  border: 1px solid white;
+  color: white;
+  background-image: url('/img/home.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+.home .hero-text button:hover {
+  color: #cccccc;
+  text-shadow: 5px 5px 15px rgb(255, 255, 255);
+}
+
+button,
+.form-box button input {
+  color: black;
+  border: 1px solid #cccccc;
+  background-color: white;
+}
+
+button:hover,
+.form-box button input:hover {
+  color: #a8a4a4;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+span {
+  color: black !important;
+}
+
+.about {
+  padding-top: 50px;
+}
+
+.about .hero-text {
+  width: 100%;
+}
+
+.about-photos {
+  display: none;
+}
+
+.special-features,
+.package.first-design,
+.package:nth-of-type(2),
+.package:nth-of-type(3),
+.package:nth-of-type(4),
+.text:nth-of-type(2),
+section.awards,
+.awards .text:nth-child(2n+1) {
+  background-image: none;
+}
+
+.special-features {
+  padding-top: 50px;
+}
+
+.special-features .hero-text {
+  align-self: flex-start;
+}
+
+.special-features .hero-text h4 {
+  margin-top: 0;
+}
+
+.special-features .package {
+  border: 1px solid #9c9b9b;
+  /* border: 2px solid #dbd8d8; */
+}
+
+.members {
+  background-color: white;
+  border: 1px solid #9c9b9b;
+}
+
+.members h3,
+i,
+p {
+  color: black;
+}
+
+.members .media {
+  border-top: 1px solid #9c9b9b;
+}
+
+.members .media i {
+  transition: .3s;
+}
+
+.members .media i:hover {
+  color: #9c9b9b;
+  font-size: 20px;
+}
+
+.awards .text {
+  border: 1px solid #9c9b9b;
+}
+
+.awards .text h3,
+.awards .text p {
+  color: black;
+}
+
+.informations {
+  background-color: white;
+}
+
+section.informations .part h3,
+li {
+  color: black;
+}
+
+.contact-us input,
+textarea {
+  border: 1px solid #9c9b9b;
+}
+
+.instagram-feed {
+  display: none;
+}
+
+.footer {
+  background-color: black;
+}
+
+.footer p {
+  color: white;
 }

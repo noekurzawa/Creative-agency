@@ -200,7 +200,7 @@ section.about h3 {
   width: 70%;
   margin-top: -15px;
   border: 1px solid white;
-  border-radius: 5px;
+  border-radius: 3px;
 
 }
 
@@ -295,6 +295,7 @@ section.about h3 {
   margin-bottom: 30px;
   overflow-y: hidden;
   border: 1px solid black;
+  border-radius: 3px;
 }
 
 .members img {
@@ -355,7 +356,7 @@ section.awards {
   width: 60%;
   margin-top: -30px;
   border: 1px solid white;
-  border-radius: 10px;
+  border-radius: 3px;
 }
 
 .awards h3 {
@@ -376,40 +377,20 @@ section.contact-us {
   padding-bottom: 30px;
 }
 
-section.contact-us .wrapper {
-  align-items: flex-start;
+.contact-us .hero-text{
+  align-self: flex-start;
+}
+
+.huge-box{
+  width: 100%;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
 }
 
 .contact-us h4 {
   margin-top: 30px;
-}
-
-.data {
-  width: 100%;
-  margin-bottom: 30px;
-}
-
-.data .hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 40px;
-}
-
-
-.data p {
-  text-align: center;
-  margin-top: 10px;
-}
-
-.data .maps:first-child {
-  margin-top: 20px;
-}
-
-.data img {
-  height: 30px;
-  width: 30px;
 }
 
 .line {
@@ -493,6 +474,11 @@ section.contact-us .wrapper {
   width: 100%;
 }
 
+.data{
+  display: flex;
+  flex-direction: row;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -536,6 +522,11 @@ textarea {
 .form-box button input:hover {
   color: #000000;
   cursor: pointer;
+}
+
+/* SECTION-INFORMATION */
+.informations .wrapper{
+  height: 100%;
 }
 
 .footer {

@@ -1,0 +1,16 @@
+.wrapper{
+  width: 60%;
+}
+
+
+.home .hero-text{
+  width: 100%;
+}
+
+.special-features .wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+

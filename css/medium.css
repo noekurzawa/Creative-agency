@@ -86,6 +86,8 @@ header {
 .instagram-feed {
   display: flex;
   justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .instagram-feed img {
@@ -106,4 +108,8 @@ margin-top: 10px;
 
 .contact-info p:first-child {
   margin-top: 0;
+}
+
+.hero p{
+  width: 260px;
 }
