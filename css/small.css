@@ -20,6 +20,10 @@ section .home {
     margin-top: 20px;
 }
 
+section.about h3 {
+    display: block;
+}
+
 .about-photos img:nth-of-type(4) {
     margin-top: 20px;
 }
@@ -62,8 +66,6 @@ section.awards {
 
 
 /* SECTION CONTACT-US */
-.contact-us .wrapper .line {
-    display: none;
-}
+
 
 /* SECTION CONTACT-US */
