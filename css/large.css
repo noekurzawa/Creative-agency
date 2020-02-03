@@ -1,5 +1,5 @@
 * {
-  color: white;
+  color: black;
 }
 
 body {
@@ -54,6 +54,10 @@ aside {
   cursor: pointer;
 }
 
+.nav-desktop a:nth-of-type(5){
+  display: none;
+}
+
 .about {
   padding-top: 0;
 }
@@ -85,6 +89,15 @@ aside {
   margin-top: 30px;
 }
 
+.package .circle:nth-of-type(1) {
+  color: white;
+  background-color: white;
+}
+
+.circle i {
+  font-size: 25px;
+}
+
 .special-features .package {
   margin: 0;
   width: 23%;
@@ -108,14 +121,8 @@ aside {
   color: white;
 }
 
-.awards .wrapper {
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.awards .text {
-  margin-top: 0;
-  width: 23%;
+.awards{
+  display: none;
 }
 
 .contact-us .wrapper .form-box:last-child {
