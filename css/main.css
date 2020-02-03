@@ -7,7 +7,6 @@
   scroll-behavior: smooth;
 }
 
-/* HEADER */
 header .wrapper {
   flex-direction: row;
 }
@@ -62,7 +61,6 @@ header span {
   font-weight: 700;
 }
 
-/* SECTION-HOME*/
 section {
   display: flex;
   justify-content: center;
@@ -76,7 +74,6 @@ section.home {
   flex-direction: column;
   justify-content: flex-start;
   background-image: url("../img/home.jpg");
-  /* background-image: url("../img/people-2569234_1920.jpg"); */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -100,7 +97,6 @@ section.home {
 }
 
 .hero-text h4 {
-  /* color: #ff6600; */
   font-size: 17px;
   letter-spacing: 1px;
 }
@@ -132,7 +128,6 @@ button:hover {
   cursor: pointer;
 }
 
-/* SECTION ABOUT */
 .about {
   padding-bottom: 30px;
 }
@@ -158,10 +153,8 @@ section.about h3 {
   }
 }
 
-/* SECTION-SPECIAL-FEATURES */
 .special-features {
   color: white;
-  /* background-image: url("../img/home.jpg"); */
   background-image: url("../img/background_1280.jpg");
   background-position: center;
   background-size: cover;
@@ -187,7 +180,6 @@ section.about h3 {
   margin-top: -15px;
   border: 1px solid white;
   border-radius: 3px;
-
 }
 
 .package .text {
@@ -258,7 +250,6 @@ section.about h3 {
   background-color: rgb(26, 138, 182);
 }
 
-/* TEAM-MEMBERS */
 .team-members .team-box {
   display: flex;
   justify-content: center;
@@ -315,7 +306,6 @@ section.about h3 {
   padding: 5px 30px;
 }
 
-/* SECTION AWARDS */
 section.awards {
   display: flex;
   flex-direction: column;
@@ -355,7 +345,6 @@ section.awards {
   color: white;
 }
 
-/* SECTION FORM */
 section.contact-us {
   align-items: flex-start;
 }
@@ -387,7 +376,6 @@ section.contact-us {
   height: 390px;
 }
 
-/* SECTION INFORMATIONS */
 .informations {
   display: flex;
   flex-direction: column;
@@ -445,7 +433,6 @@ section.contact-us {
   margin-top: 10px;
 }
 
-/* FORM */
 .contact-us .wrapper .form-box:last-child {
   display: flex;
   justify-content: center;
@@ -502,7 +489,6 @@ textarea {
   cursor: pointer;
 }
 
-/* SECTION-INFORMATION */
 .informations .wrapper {
   height: 100%;
 }
