@@ -54,10 +54,6 @@ aside {
   cursor: pointer;
 }
 
-.nav-desktop a:nth-of-type(5){
-  display: none;
-}
-
 .about {
   padding-top: 0;
 }
@@ -121,8 +117,14 @@ aside {
   color: white;
 }
 
-.awards{
-  display: none;
+.awards .wrapper {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.awards .text {
+  margin-top: 0;
+  width: 23%;
 }
 
 .contact-us .wrapper .form-box:last-child {
@@ -242,10 +244,6 @@ p {
 .members .media i:hover {
   color: #9c9b9b;
   font-size: 20px;
-}
-
-.awards .text {
-  border: 1px solid #9c9b9b;
 }
 
 .awards .text h3,
