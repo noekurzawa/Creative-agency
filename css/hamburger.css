@@ -30,10 +30,6 @@ aside a{
     font-size: 19px;
 }
 
-aside li:hover {
-    color: rgb(0, 215, 243);
-}
-
 .active {
     left: 0;
     position: fixed;
